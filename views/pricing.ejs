@@ -1,3 +1,0 @@
-<%- include('partials/header', { title: 'Pricing' }) %>
-<section class="section"><div class="container"><h1>Bảng giá</h1><div class="grid cards-3"><% products.forEach(item => { %><article class="card slim"><div class="card-body"><span class="badge"><%= item.badge %></span><h3><%= item.name %></h3><p><%= item.description %></p><div class="price"><%= item.price %></div><a class="btn btn-secondary" href="/store/product/<%= item.slug %>">Xem gói</a></div></article><% }) %></div></div></section>
-<%- include('partials/footer') %>

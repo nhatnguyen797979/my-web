@@ -1,3 +1,0 @@
-<%- include('partials/header', { title: 'Tools' }) %>
-<section class="section"><div class="container"><h1>Tools miễn phí</h1><p>Danh sách tool giữ người dùng ở lại web.</p><div class="grid cards-3"><% tools.forEach(item => { %><article class="card slim"><div class="card-body"><span class="badge"><%= item.badge %></span><h3><%= item.name %></h3><p><%= item.description %></p><a href="/tools/<%= item.slug %>">Mở tool</a></div></article><% }) %></div></div></section>
-<%- include('partials/footer') %>

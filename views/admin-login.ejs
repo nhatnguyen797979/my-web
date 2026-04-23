@@ -1,3 +1,0 @@
-<%- include('partials/header', { title: 'Admin Login' }) %>
-<section class="section"><div class="container narrow"><div class="card"><div class="card-body"><h1>Đăng nhập admin</h1><% if (error) { %><div class="error"><%= error %></div><% } %><form method="post" action="/admin/login" class="stack-form"><label>Mật khẩu admin<input type="password" name="password" required /></label><button class="btn btn-primary" type="submit">Đăng nhập</button></form><p class="muted">Mặc định: admin123. Hãy đổi bằng biến môi trường ADMIN_PASSWORD khi deploy.</p></div></div></div></section>
-<%- include('partials/footer') %>

@@ -1,3 +1,0 @@
-<%- include('partials/header', { title: 'Store' }) %>
-<section class="section"><div class="container"><h1>Store</h1><p>Nơi đặt sản phẩm và dịch vụ chính của bạn.</p><div class="grid cards-3"><% products.forEach(item => { %><article class="card"><img src="<%= item.image_url %>" class="card-image" alt="<%= item.name %>" /><div class="card-body"><span class="badge"><%= item.badge %></span><h3><%= item.name %></h3><p><%= item.description %></p><div class="card-row"><strong><%= item.price %></strong><a href="/store/product/<%= item.slug %>">Chi tiết</a></div></div></article><% }) %></div></div></section>
-<%- include('partials/footer') %>

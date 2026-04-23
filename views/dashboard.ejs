@@ -1,3 +1,0 @@
-<%- include('partials/header', { title: 'Dashboard' }) %>
-<section class="section"><div class="container"><h1>Dashboard người dùng</h1><p>Trang này đang dùng để hiển thị đơn mẫu sau khi khách bấm mua.</p><div class="card"><div class="card-body"><table class="table"><thead><tr><th>ID</th><th>Khách</th><th>Email</th><th>Mặt hàng</th><th>Số tiền</th><th>Trạng thái</th></tr></thead><tbody><% orders.forEach(order => { %><tr><td>#<%= order.id %></td><td><%= order.customer_name %></td><td><%= order.customer_email %></td><td><%= order.item_name %></td><td><%= order.amount %></td><td><%= order.status %></td></tr><% }) %></tbody></table></div></div></div></section>
-<%- include('partials/footer') %>

@@ -1,3 +1,0 @@
-<%- include('partials/header', { title: 'Resources' }) %>
-<section class="section"><div class="container"><h1>Tài nguyên số</h1><p>Preset, prompt, template và file tải về.</p><div class="grid cards-3"><% resources.forEach(item => { %><article class="card slim"><div class="card-body"><span class="badge"><%= item.badge %></span><h3><%= item.name %></h3><p><%= item.description %></p><div class="card-row"><strong><%= item.price %></strong><a href="/resources/<%= item.slug %>">Chi tiết</a></div></div></article><% }) %></div></div></section>
-<%- include('partials/footer') %>
