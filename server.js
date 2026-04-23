@@ -6,6 +6,11 @@ const bodyParser = require('body-parser');
 const slugify = require('slugify');
 
 const app = express();
+app.set("view engine", "ejs");
+
+app.get("/", (req, res) => {
+  res.render("index");
+});
 const PORT = process.env.PORT || 3000;
 const HOST = '0.0.0.0';
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin123';
